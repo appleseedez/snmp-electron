@@ -2,10 +2,10 @@
   "name": "app",
   "version": "1.0.0",
   "description": "电源管理",
-  "main": "main.js",
+  "main": "./main/index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "electron main.js"
+    "start": "electron ./main/index.js"
   },
   "author": "",
   "license": "ISC",

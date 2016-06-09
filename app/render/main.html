@@ -7,8 +7,8 @@
     <title>mode</title>
     <link href="assets/css/font-awesome.css" rel="stylesheet">
     <link href="assets/css/app.css" rel="stylesheet">
-    <script src="http://libs.baidu.com/jquery/1.11.1/jquery.min.js"></script> 
-    <script src="assets/vendors/jquery.nicescroll.min.js"></script>     
+    <!-- <script src="http://libs.baidu.com/jquery/1.11.1/jquery.min.js"></script>
+    <script src="assets/vendors/jquery.nicescroll.min.js"></script> -->
   </head>
   <body>
     <div class="shell-content-mb">
@@ -133,7 +133,7 @@
                       </table>
                     </div>
                     <div class="table-content J_scroll_01">
-                      <table>  
+                      <table>
                         <tr class="hide">
                           <th>告警序号</th>
                           <th>告警类型</th>
@@ -143,7 +143,7 @@
                           <th>IP</th>
                           <th>备注</th>
                           <th>操作</th>
-                        </tr>                        
+                        </tr>
                         <tr>
                           <td>null</td>
                           <td>null</td>
@@ -249,19 +249,25 @@
             <span class="last">2016-05-29&nbsp;&nbsp;14:53</span>
           </div>
         </div>
-      </div>      
+      </div>
     </div>
     <script type="text/javascript">
-        $('.J_scroll_01').niceScroll({
-            background: "#ddd",
-            cursorcolor: "#aaa",//#CC0071 光标颜色 
-            cursoropacitymin:0.3, 
-            cursoropacitymax: 0.7, //改变不透明度非常光标处于活动状态（scrollabar“可见”状态），范围从1到0
-            cursorwidth: "7px", //像素光标的宽度 
-            cursorborder: "0", //     游标边框css定义 
-            cursorborderradius: "0px",//以像素为光标边界半径 
-            autohidemode: "leave",//是否隐藏滚动条
-        });
+      // 
+      // let win = require('electron').remote
+      // win.getCurrentWindow()
+      // win.setBounds({
+      //   width:screen.width
+      // })
+        // $('.J_scroll_01').niceScroll({
+        //     background: "#ddd",
+        //     cursorcolor: "#aaa",//#CC0071 光标颜色
+        //     cursoropacitymin:0.3,
+        //     cursoropacitymax: 0.7, //改变不透明度非常光标处于活动状态（scrollabar“可见”状态），范围从1到0
+        //     cursorwidth: "7px", //像素光标的宽度
+        //     cursorborder: "0", //     游标边框css定义
+        //     cursorborderradius: "0px",//以像素为光标边界半径
+        //     autohidemode: "leave",//是否隐藏滚动条
+        // });
     </script>
   </body>
 </html>
