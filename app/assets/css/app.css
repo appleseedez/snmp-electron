@@ -1,0 +1,370 @@
+html,
+body {
+  font-family: "微软雅黑";
+  font-size: 12px;
+  height: 100%;
+}
+body,
+div,
+ul,
+dl,
+li,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+dt,
+dd,
+img,
+a,
+span,
+p,
+table,
+th,
+td,
+i,
+input,
+button,
+textarea,
+form {
+  padding: 0;
+  margin: 0;
+  border: none;
+}
+ul,
+li,
+dl,
+dt,
+dd,
+ol {
+  list-style: none;
+}
+h1,
+h2,
+h3,
+h4 {
+  font-size: 16px;
+}
+i {
+  font-style: normal;
+}
+a {
+  color: #333;
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: none;
+}
+.shell-content-mb {
+  height: 100%;
+  background-color: #fff;
+}
+.shell-content-mb .home-screen {
+  height: 100%;
+}
+.shell-content-mb .home-fast-bar {
+  padding: 30px 20px 20px;
+  height: 26px;
+}
+.shell-content-mb .home-fast-bar li {
+  position: relative;
+  float: left;
+  height: 26px;
+  margin-right: 16px;
+  padding-left: 30px;
+  line-height: 26px;
+  cursor: pointer;
+}
+.shell-content-mb .home-fast-bar .ico-box {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 26px;
+  height: 26px;
+  text-align: center;
+}
+.shell-content-mb .home-fast-bar .ico-box i {
+  height: 26px;
+  line-height: 26px;
+  font-size: 20px;
+}
+.shell-content-mb .home-main-box {
+  height: calc(100% - 116px);
+  position: relative;
+}
+.shell-content-mb .home-main-box .left-box {
+  position: absolute;
+  left: 0;
+  height: 100%;
+  width: 300px;
+  padding-left: 10px;
+}
+.shell-content-mb .home-main-box .right-box {
+  height: 100%;
+  padding-left: 340px;
+  padding-right: 10px;
+}
+.shell-content-mb .home-main-box .top-box {
+  height: calc(100% - 260px);
+}
+.shell-content-mb .home-main-box .bot-box {
+  height: 240px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+.shell-content-mb .home-footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 16px;
+  padding: 12px 0;
+  background-color: #f1f1f1;
+}
+.shell-content-mb .home-footer .state-bar {
+  height: 16px;
+  line-height: 16px;
+}
+.shell-content-mb .home-footer .state-bar span {
+  padding-left: 20px;
+}
+.shell-content-mb .home-footer .state-bar .first {
+  padding-right: 40px;
+  color: #2e6dfd;
+  border-right: 2px solid #aaa;
+}
+.shell-content-mb .home-footer .state-bar .last {
+  float: right;
+  height: 16px;
+  padding-right: 100px;
+  border-left: 2px solid #aaa;
+}
+.shell-content-mb .distribute-map {
+  position: relative;
+  height: 100%;
+}
+.shell-content-mb .distribute-map .tab-box {
+  padding-left: 10px;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+}
+.shell-content-mb .distribute-map .tab-box .item {
+  float: left;
+  height: 30px;
+  line-height: 30px;
+  padding: 0 10px;
+  color: #666;
+  font-weight: 700;
+  border: 1px solid #e5e5e5;
+  background-color: #f1f1f1;
+  cursor: pointer;
+}
+.shell-content-mb .distribute-map .tab-box .sel {
+  color: #333;
+  background-color: #fff;
+  border-bottom-color: #fff;
+}
+.shell-content-mb .distribute-map .main-box {
+  height: calc(100% - 31px);
+  padding-top: 31px;
+}
+.shell-content-mb .distribute-map .main-box .content-box {
+  height: calc(100% - 2px);
+  border: 1px solid #e5e5e5;
+}
+.shell-content-mb .statistics-box {
+  position: relative;
+  height: 240px;
+}
+.shell-content-mb .statistics-box .tab-box {
+  padding-left: 10px;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+.shell-content-mb .statistics-box .tab-box .item {
+  float: left;
+  height: 30px;
+  line-height: 30px;
+  padding: 0 10px;
+  color: #666;
+  font-weight: 700;
+  border: 1px solid #e5e5e5;
+  background-color: #f1f1f1;
+  cursor: pointer;
+}
+.shell-content-mb .statistics-box .tab-box .sel {
+  color: #333;
+  background-color: #fff;
+  border-bottom-color: #fff;
+}
+.shell-content-mb .statistics-box .main-box {
+  height: calc(100% - 31px);
+  padding-top: 31px;
+}
+.shell-content-mb .statistics-box .main-box .content-box {
+  height: calc(100% - 2px);
+  border: 1px solid #e5e5e5;
+}
+.shell-content-mb .topology-box {
+  height: 100%;
+}
+.shell-content-mb .topology-box .content-box {
+  background-color: #f1f1f1;
+  height: 100%;
+}
+.shell-content-mb .information-box {
+  position: relative;
+  height: 240px;
+}
+.shell-content-mb .information-box .tab-box {
+  padding-left: 10px;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+.shell-content-mb .information-box .tab-box .item {
+  float: left;
+  height: 30px;
+  line-height: 30px;
+  padding: 0 10px;
+  color: #666;
+  font-weight: 700;
+  border: 1px solid #e5e5e5;
+  background-color: #f1f1f1;
+  cursor: pointer;
+}
+.shell-content-mb .information-box .tab-box .sel {
+  color: #333;
+  background-color: #fff;
+  border-bottom-color: #fff;
+}
+.shell-content-mb .information-box .main-box {
+  height: calc(100% - 31px);
+  padding-top: 31px;
+}
+.shell-content-mb .information-box .main-box .content-box {
+  height: calc(100% - 34px);
+  padding: 16px;
+  border: 1px solid #e5e5e5;
+}
+.shell-content-mb .information-box .waring-box .action-box {
+  height: 22px;
+  padding: 8px 20px;
+  background-color: #f2f9fc;
+  border-top: 1px solid #c9e6f2;
+  border-bottom: 1px solid #eee;
+}
+.shell-content-mb .information-box .waring-box .action-box li {
+  float: left;
+  margin-right: 16px;
+  padding: 0 8px;
+  height: 22px;
+  line-height: 22px;
+  color: #fff;
+  background-color: #56B2D8;
+  border: 1px solid #f2f9fc;
+  cursor: pointer;
+}
+.shell-content-mb .information-box .waring-box .action-box li:hover {
+  border: 1px solid #56B2D8;
+}
+.shell-content-mb .information-box .waring-box .action-box .model {
+  margin-right: 26px;
+}
+.shell-content-mb .information-box .waring-box .action-box .close {
+  color: #56B2D8;
+  background-color: #c9e6f2;
+}
+.shell-content-mb .information-box .waring-box .action-box .close:hover {
+  border: 1px solid #c9e6f2;
+}
+.shell-content-mb .information-box .waring-box table {
+  width: 100%;
+  border-collapse: collapse;
+}
+.shell-content-mb .information-box .waring-box table th {
+  height: 26px;
+  font-weight: normal;
+  background-color: #eee;
+  border-left: 2px solid #fff;
+  border-right: 2px solid #fff;
+}
+.shell-content-mb .information-box .waring-box table th:first-child {
+  border-left: 2px solid #eee;
+}
+.shell-content-mb .information-box .waring-box table th:last-child {
+  border-right: 2px solid #eee;
+}
+.shell-content-mb .information-box .waring-box table td {
+  height: 22px;
+  text-align: center;
+  border: 2px solid #eee;
+}
+.shell-content-mb .information-box .waring-box table .hide {
+  opacity: 0;
+}
+.shell-content-mb .information-box .waring-box table .hide th {
+  border-color: #fff;
+}
+.shell-content-mb .information-box .waring-box .table-tit {
+  position: relative;
+  height: 26px;
+  margin-bottom: -26px;
+  overflow: hidden;
+  z-index: auto;
+}
+.shell-content-mb .information-box .waring-box .table-content {
+  height: calc(100% - 40px);
+}
+.shell-content-mb .information-box .message-box .message-list {
+  height: 100%;
+}
+.shell-content-mb .information-box .message-box p {
+  padding: 0 12px;
+  margin-bottom: 5px;
+  background-color: #fff9ea;
+  line-height: 24px;
+}
+.shell-content-mb .information-box .attr-box table {
+  width: 100%;
+  border-collapse: collapse;
+}
+.shell-content-mb .information-box .attr-box table th {
+  height: 26px;
+  font-weight: normal;
+  background-color: #eee;
+  border-left: 2px solid #fff;
+  border-right: 2px solid #fff;
+}
+.shell-content-mb .information-box .attr-box table th:first-child {
+  border-left: 2px solid #eee;
+}
+.shell-content-mb .information-box .attr-box table th:last-child {
+  border-right: 2px solid #eee;
+}
+.shell-content-mb .information-box .attr-box table td {
+  height: 22px;
+  text-align: center;
+  border: 2px solid #eee;
+}
+.shell-content-mb .information-box .attr-box table .hide {
+  opacity: 0;
+}
+.shell-content-mb .information-box .attr-box table .hide th {
+  border-color: #fff;
+}
+.shell-content-mb .information-box .attr-box .table-tit {
+  position: relative;
+  height: 26px;
+  margin-bottom: -26px;
+  overflow: hidden;
+  z-index: auto;
+}
+.shell-content-mb .information-box .attr-box .table-content {
+  height: 100%;
+}

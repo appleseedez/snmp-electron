@@ -1,0 +1,96 @@
+//初始化
+html,body{
+    font-family: "微软雅黑";
+    font-size: 12px;
+    height: 100%;
+}
+
+body, div, ul, dl, li, h1, h2, h3, h4, h5, h6, dt, dd, img, a, span, p, table, th,td, i, input, button, textarea, form {
+  padding: 0;
+  margin: 0;
+  border: none;
+}
+
+ul, li, dl, dt, dd, ol {
+  list-style: none;
+}
+
+h1, h2, h3, h4 {
+  font-size: 16px;
+}
+
+i {
+  font-style: normal;
+}
+
+a {
+  color: #333;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+//tab 
+.tab-1-mb(@h:30px){
+  padding-left: 10px;
+  .item{
+    float: left;
+    height: @h;
+    line-height: @h;
+    padding:0 10px;
+    color: #666;
+    font-weight: 700;    
+    border: 1px solid #e5e5e5;
+    background-color: #f1f1f1;
+    cursor: pointer;
+  }
+  .sel{
+    color: #333;
+    background-color: #fff;
+    border-bottom-color: #fff;
+  }
+}
+
+//form
+.table-scroll-1-mb(@content_h){
+  @tit_h:26px;
+  @td_h:22px;
+  table{
+      width: 100%;
+      border-collapse:collapse;
+      th{
+          height: @tit_h;
+          font-weight: normal;
+          background-color: #eee;
+          border-left: 2px solid #fff;
+          border-right: 2px solid #fff;
+          &:first-child{
+              border-left: 2px solid #eee;
+          }
+          &:last-child{
+              border-right: 2px solid #eee;
+          }
+      }
+      td{
+          height: @td_h;
+          text-align: center;
+          border: 2px solid #eee;
+      }
+      .hide{
+          opacity: 0;
+          th{border-color:#fff;}                    
+      }
+  }
+  .table-tit{
+      position: relative;
+      height: @tit_h;
+      margin-bottom: -@tit_h;
+      overflow: hidden;
+      z-index: auto;
+  }
+  .table-content{
+      height: @content_h;
+  }
+}
