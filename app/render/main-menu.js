@@ -1,9 +1,22 @@
+const { ipcRenderer } = require('electron')
 const menus = [
   { label:'关于软件' },
   {
     label:'系统管理',
     submenu:[
-      { label:'用户管理' },
+      {
+        label:'用户管理',
+        click: function (item, focusedWindow) {
+          if (focusedWindow) {
+            ipcRenderer.send('open-window',{
+              moduleName:'user',
+              height:400,
+              width:800,
+              title:'用户管理'
+            })
+          }
+        }
+      },
       { label:'权限组管理' },
       { label:'安全管理' },
       { label:'系统配置' },
