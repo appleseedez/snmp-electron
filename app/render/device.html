@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>details</title>
+    <link href="assets/css/font-awesome.css" rel="stylesheet">
+    <link href="assets/css/app.css" rel="stylesheet">
+    <script src="http://libs.baidu.com/jquery/1.11.1/jquery.min.js"></script>
+    <script src="assets/vendors/jquery.nicescroll.min.js"></script>
+    <script src="assets/vendors/echarts.min.js"></script>
+  </head>
+  <body>
+    <div class="shell-content-mb">
+      <div class="detail-windows">
+        <div class="detaill-main-box">
+          <div class="left-box">
+            <div class="switch-box">
+              <dl class="switch-list">
+                <dt>
+                  <div class="col">
+                    <span>单元状态</span>
+                  </div>
+                  <div class="col">
+                    <span>单元状态</span>
+                  </div>
+                  <div class="col">
+                    <span>单元状态</span>
+                  </div>
+                </dt>
+                <dd>
+                  <div class="col">
+                    <div class="switch-lamp">
+                      <span></span>
+                    </div>
+                    <span class="txt">①---</span>
+                  </div>
+                  <div class="col">
+                    <div class="switch-btn">
+                      <span class="state-txt"></span>
+                      <span class="btn"></span>
+                    </div>
+                  </div>
+                  <div class="col">
+                    <span class="reason">--</span>
+                  </div>
+                </dd>
+                <dd class="on">
+                  <div class="col">
+                    <div class="switch-lamp">
+                      <span></span>
+                    </div>
+                    <span class="txt">①---</span>
+                  </div>
+                  <div class="col">
+                    <div class="switch-btn">
+                      <span class="state-txt"></span>
+                      <span class="btn"></span>
+                    </div>
+                  </div>
+                  <div class="col">
+                    <span class="reason">--</span>
+                  </div>
+                </dd>
+                <dd class="on">
+                  <div class="col">
+                    <div class="switch-lamp">
+                      <span></span>
+                    </div>
+                    <span class="txt">①---</span>
+                  </div>
+                  <div class="col">
+                    <div class="switch-btn">
+                      <span class="state-txt"></span>
+                      <span class="btn"></span>
+                    </div>
+                  </div>
+                  <div class="col">
+                    <span class="reason">--</span>
+                  </div>
+                </dd>
+                <dd class="on">
+                  <div class="col">
+                    <div class="switch-lamp">
+                      <span></span>
+                    </div>
+                    <span class="txt">①---</span>
+                  </div>
+                  <div class="col">
+                    <div class="switch-btn">
+                      <span class="state-txt"></span>
+                      <span class="btn"></span>
+                    </div>
+                  </div>
+                  <div class="col">
+                    <span class="reason">--</span>
+                  </div>
+                </dd>
+              </dl>
+            </div>
+          </div>
+          <div class="right-box">
+            <div class="echarts-box" id="J_Echart1"></div>
+            <div class="echarts-box" id="J_Echart2"></div>
+          </div>
+        </div>
+        <div class="detaill-footer">
+          <div class="state-bar">
+            <span class="first">MAC地址：--</span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script type="text/javascript">
+        // 基于准备好的dom，初始化echarts实例
+        var myChart1 = echarts.init(document.getElementById('J_Echart1'));
+        var myChart2 = echarts.init(document.getElementById('J_Echart2'));
+        // 指定图表的配置项和数据
+        var option1 = {
+            tooltip : {
+                formatter: "{b} : {c}V"
+            },
+            toolbox: {show: false},
+            series: [
+                {
+                    name: '电压',
+                    type: 'gauge',
+                    radius: '100%',
+                    min: 80,
+                    max: 270,
+                    splitNumber: 19,
+                    detail: {
+                      formatter:'{value}V',
+                      offsetCenter: [0, '80px'],
+                      textStyle:{fontSize: 18}
+                    },
+                    data: [{value: 150, name: '电压'}],
+                    axisLine:{
+                      lineStyle:{
+                        width:10
+                      }
+                    },
+                    splitLine:{length: 15},
+                    pointer: {
+                      width: 3
+                    },
+                    title: {
+                      offsetCenter:[0, '30%'],
+                      textStyle:{fontSize: 16}
+                    }
+                }
+            ]
+        };
+        var option2 = {
+            tooltip : {
+                formatter: "{b} : {c}A"
+            },
+            toolbox: {show: false},
+            series: [
+                {
+                    name: '电流',
+                    type: 'gauge',
+                    radius: '100%',
+                    min: 0,
+                    max: 20,
+                    splitNumber: 20,
+                    detail: {
+                      formatter:'{value}A',
+                      offsetCenter: [0, '80px'],
+                      textStyle:{fontSize: 18}
+                    },
+                    data: [{value: 12, name: '电流'}],
+                    axisLine:{
+                      lineStyle:{
+                        width:10
+                      }
+                    },
+                    pointer: {
+                      width: 3
+                    },
+                    title: {
+                      offsetCenter:[0, '30%'],
+                      textStyle:{fontSize: 16}
+                    }
+                }
+            ]
+        };
+        // 使用刚指定的配置项和数据显示图表。
+        myChart1.setOption(option1);
+        myChart2.setOption(option2);
+        require('./device')
+    </script>
+  </body>
+</html>

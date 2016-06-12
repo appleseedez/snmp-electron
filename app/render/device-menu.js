@@ -2,23 +2,23 @@ const { ipcRenderer } = require('electron')
 const menus = [
   { label:'关于软件' },
   {
-    label:'系统管理',
+    label:'系统配置',
     submenu:[
       {
-        label:'用户管理',
+        label:'网络配置',
         click: function (item, focusedWindow) {
           if (focusedWindow) {
             ipcRenderer.send('open-window',{
-              moduleName:'user',
+              moduleName:'network-setting',
               height:400,
-              width:800,
-              title:'用户管理'
+              width:500,
+              title:'网络配置'
             })
           }
         }
       },
       {
-        label:'权限组管理',
+        label:'SNTP配置',
         click:function(item, focusedWindow){
           if (focusedWindow) {
             ipcRenderer.send('open-window',{
@@ -30,21 +30,20 @@ const menus = [
           }
         }
        },
-      { label:'安全管理' },
-      { label:'系统配置' },
-      { label:'修改密码' },
+      { label:'SNMP配置' },
+      { label:'系统信息' },
       { label:'退出' }
     ]
   },
   {
-    label:'设备管理',
+    label:'单元配置',
     submenu:[
       { label:'设备查询' },
       { label:'在线统计' },
     ]
   },
   {
-    label:'告警管理',
+    label:'告警阈值配置',
     submenu:[
       { label:'当前告警管理' },
       { label:'历史告警管理' },
@@ -53,7 +52,15 @@ const menus = [
     ]
   },
   {
-    label:'日志管理',
+    label:'设备控制',
+    submenu:[
+      { label:'操作日志' },
+      { label:'安全日志' },
+
+    ]
+  },
+  {
+    label:'设备维护',
     submenu:[
       { label:'操作日志' },
       { label:'安全日志' },

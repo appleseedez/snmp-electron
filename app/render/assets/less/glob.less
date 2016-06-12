@@ -121,3 +121,55 @@ a:hover {
       }
   }
 }
+
+//form
+.form-mb(@h:30px){
+  height: @h;
+  padding:0 10px;
+  border: 1px solid #ccc;
+  &:focus{
+  border-color: #ccc;outline: 0;  
+  box-shadow: inset 0 1px 1px rgba(0,0,0,.075),0 0 8px rgba(0,0,0,.3) !important; }
+}
+
+.form-list-1-mb(@li_h:30px;@dt_w:60px;@inp_w:300px;@li_mgb:30px){
+  .form-item{
+    position: relative;
+    padding-left: @dt_w;
+    width: @inp_w;
+    height: @li_h;
+    line-height: @li_h;
+    margin-bottom:@li_mgb;
+    .dt{
+      position: absolute;
+      left: 0;
+      width: @dt_w;
+      height: @li_h;
+      line-height: @li_h;
+      text-align: left;
+    }
+    .input-box{      
+      height: @li_h;
+      input{        
+        .form-mb(@li_h - 2px);
+        float: left;
+        width: @inp_w - 22px;
+      }
+    }
+  }
+}
+
+.btn-01-mb(@h:26px;@pad:10px;){
+  display: inline-block;
+  padding:0 @pad;
+  height: @h;
+  line-height: @h;
+  border: 1px solid #4078c0;
+  color: #4078c0;
+  text-align:center;
+  cursor:pointer;
+  &:hover{
+    background-color: #4078c0;
+    color: #fff;
+  }
+}

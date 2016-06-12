@@ -515,3 +515,130 @@ a:hover {
   height: 250px;
   margin-bottom: 15px;
 }
+.shell-content-mb .set-pop-box {
+  padding: 100px 40px 40px;
+  display: inline-block;
+}
+.shell-content-mb .set-pop-box .form-list {
+  display: inline-block;
+}
+.shell-content-mb .set-pop-box .form-list .form-item {
+  position: relative;
+  padding-left: 80px;
+  width: 300px;
+  height: 30px;
+  line-height: 30px;
+  margin-bottom: 20px;
+}
+.shell-content-mb .set-pop-box .form-list .form-item .dt {
+  position: absolute;
+  left: 0;
+  width: 80px;
+  height: 30px;
+  line-height: 30px;
+  text-align: left;
+}
+.shell-content-mb .set-pop-box .form-list .form-item .input-box {
+  height: 30px;
+}
+.shell-content-mb .set-pop-box .form-list .form-item .input-box input {
+  height: 28px;
+  padding: 0 10px;
+  border: 1px solid #ccc;
+  float: left;
+  width: 278px;
+}
+.shell-content-mb .set-pop-box .form-list .form-item .input-box input:focus {
+  border-color: #ccc;
+  outline: 0;
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(0, 0, 0, 0.3) !important;
+}
+.shell-content-mb .set-pop-box .form-list .input-c6 .item {
+  float: left;
+  height: 30px;
+  width: 18px;
+  text-align: center;
+  line-height: 30px;
+}
+.shell-content-mb .set-pop-box .form-list .input-c6 input {
+  text-align: center;
+  width: 29px !important;
+  padding: 0 2px !important;
+}
+.shell-content-mb .set-pop-box .btn-box {
+  margin-top: 50px;
+  text-align: center;
+}
+.shell-content-mb .set-pop-box .btn-box .btn {
+  display: inline-block;
+  padding: 0 30px;
+  height: 30px;
+  line-height: 30px;
+  border: 1px solid #4078c0;
+  color: #4078c0;
+  text-align: center;
+  cursor: pointer;
+  margin: 0 10px;
+}
+.shell-content-mb .set-pop-box .btn-box .btn:hover {
+  background-color: #4078c0;
+  color: #fff;
+}
+.shell-content-mb .login-box {
+  width: 500px;
+  text-align: center;
+}
+.shell-content-mb .login-box h1 {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  font-size: 18px;
+}
+.shell-content-mb .login-box .form-list {
+  display: inline-block;
+  font-size: 14px;
+}
+.shell-content-mb .login-box .form-list .form-item {
+  position: relative;
+  padding-left: 60px;
+  width: 300px;
+  height: 30px;
+  line-height: 30px;
+  margin-bottom: 20px;
+}
+.shell-content-mb .login-box .form-list .form-item .dt {
+  position: absolute;
+  left: 0;
+  width: 60px;
+  height: 30px;
+  line-height: 30px;
+  text-align: left;
+}
+.shell-content-mb .login-box .form-list .form-item .input-box {
+  height: 30px;
+}
+.shell-content-mb .login-box .form-list .form-item .input-box input {
+  height: 28px;
+  padding: 0 10px;
+  border: 1px solid #ccc;
+  float: left;
+  width: 278px;
+}
+.shell-content-mb .login-box .form-list .form-item .input-box input:focus {
+  border-color: #ccc;
+  outline: 0;
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(0, 0, 0, 0.3) !important;
+}
+.shell-content-mb .login-box .btn-box .btn {
+  display: inline-block;
+  padding: 0 30px;
+  height: 30px;
+  line-height: 30px;
+  border: 1px solid #4078c0;
+  color: #4078c0;
+  text-align: center;
+  cursor: pointer;
+}
+.shell-content-mb .login-box .btn-box .btn:hover {
+  background-color: #4078c0;
+  color: #fff;
+}
